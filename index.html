@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List Formatter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>List Formatter</h1>
+        <p>Turn messy numbered text into a clean, organized list.</p>
+      </header>
+
+      <section class="formatter">
+        <label for="inputText">Your messy list</label>
+        <textarea
+          id="inputText"
+          placeholder="Example: 1person A 2. person b 3.) person c"></textarea>
+
+        <button id="formatButton">Format List</button>
+
+        <label for="outputText">Formatted result</label>
+        <textarea
+          id="outputText"
+          placeholder="Your formatted list will appear here..."
+          readonly></textarea>
+
+        <div class="actions">
+          <button id="copyButton" class="secondary">Copy Result</button>
+          <button id="clearButton" class="secondary">Clear</button>
+        </div>
+
+        <p id="message" aria-live="polite"></p>
+      </section>
+
+      <footer>List Formatter · Free online tool</footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
